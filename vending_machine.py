@@ -16,13 +16,13 @@ def display_menu():
 
 # Calculate change
 def calculate_change(payment, cost):
-    return payment - cost
+    return payment - cost # there was an extra 10 cents charge to the user.
 
 # Operate Vending Machine
 def vending_machine():
-    items = {"1": 1.25, "2": 1.00, "3": 0.75}
+    items = {"1": 1.25, "2": 1.00, "3": 0.75} # Item 3 was missing.
     while True:
-        display_menu()
+        display_menu() # there were no parenthases, so the menu wouldn't display when running the code.
         choice = input("\nSelect an item (1-3) or 'q' to quit: ")
 
         if choice == 'q':
