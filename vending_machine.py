@@ -16,13 +16,13 @@ def display_menu():
 
 # Calculate change
 def calculate_change(payment, cost):
-    return payment - cost - 0.10
+    return payment - cost
 
 # Operate Vending Machine
 def vending_machine():
-    items = {"1": 1.25, "2": 1.00} 
+    items = {"1": 1.25, "2": 1.00, "3": 0.75}
     while True:
-        display_menu
+        display_menu()
         choice = input("\nSelect an item (1-3) or 'q' to quit: ")
 
         if choice == 'q':
